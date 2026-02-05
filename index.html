@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Public Security Notice: Missing Person</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .blink-bg {
+            animation: blinker 1.5s linear infinite;
+        }
+
+        @keyframes blinker {
+            50% {
+                opacity: 0.5;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50 text-slate-900 min-h-screen flex flex-col">
+
+    <!-- Navbar -->
+    <header class="bg-slate-900 text-white shadow-lg border-b-4 border-red-600">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <div
+                    class="h-10 w-10 bg-slate-700 rounded-full flex items-center justify-center border-2 border-slate-500">
+                    <i class="fas fa-shield-alt text-xl text-slate-300"></i>
+                </div>
+                <div>
+                    <h1 class="text-sm font-bold uppercase tracking-widest text-slate-400">Official Notice</h1>
+                    <p class="text-lg font-extrabold tracking-tight leading-none text-white">PUBLIC SECURITY</p>
+                </div>
+            </div>
+            <button
+                class="hidden sm:flex items-center gap-2 bg-red-700 hover:bg-red-800 text-white px-4 py-2 rounded font-semibold text-sm transition shadow-sm uppercase tracking-wider">
+                <i class="fas fa-phone-alt"></i> Report Found
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow container mx-auto px-4 py-8 md:py-12 max-w-5xl">
+
+        <!-- Urgent Banner -->
+        <div class="bg-red-50 border-l-4 border-red-600 p-4 mb-8 flex items-start shadow-sm">
+            <div class="text-red-600 mr-4 mt-1">
+                <i class="fas fa-exclamation-triangle text-2xl animate-pulse"></i>
+            </div>
+            <div>
+                <p class="font-bold text-red-800 uppercase text-sm tracking-wide">Urgent Alert</p>
+                <p class="text-red-900 font-semibold">तात्काळ सार्वजनिक मदतीची विनंती आहे. कृपया खालील तपशील
+                    काळजीपूर्वक वाचा..</p>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-xl overflow-hidden border border-slate-200">
+            <!-- Card Body -->
+            <div class="flex flex-col md:flex-row">
+
+                <!-- Image Section (Left) -->
+                <div
+                    class="w-full md:w-5/12 bg-slate-100 p-6 md:p-8 flex items-center justify-center border-b md:border-b-0 md:border-r border-slate-200 relative">
+                    <!-- Stamp Overlay -->
+                    <div class="absolute top-4 right-4 z-10 opacity-80">
+                        <div
+                            class="border-4 border-red-600 rounded px-4 py-1 transform rotate-12 bg-white/80 backdrop-blur-sm">
+                            <span class="text-red-700 font-black text-xl uppercase tracking-widest">Urgent</span>
+                        </div>
+                    </div>
+
+                    <div class="relative group">
+                        <!-- Professional Border -->
+                        <div
+                            class="absolute -inset-1 bg-gradient-to-br from-slate-300 to-slate-400 rounded-lg blur-sm opacity-50">
+                        </div>
+                        <div class="relative bg-white p-2 rounded-lg shadow-sm border border-slate-300">
+                            <!-- Image Source: Local File PATH as requested -->
+                            <img src="./Subjct.jpg" alt="Subject Photo"
+                                class="w-full h-auto rounded grayscale-[10%] contrast-125 object-cover max-h-[500px]"
+                                onerror="this.onerror=null; this.src='https://placehold.co/400x500?text=IMAGE+NOT+FOUND'; this.parentElement.classList.add('bg-red-100');">
+                        </div>
+                        <div class="mt-4 text-center">
+                            <p class="text-xs font-mono text-slate-500 uppercase tracking-wider">File Ref: #MISSING-8530
+                            </p>
+                            <p class="text-xs font-mono text-slate-400">Last Verified: Today</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Details Section (Right) -->
+                <div class="w-full md:w-7/12 p-6 md:p-10 flex flex-col justify-center">
+
+                    <div class="mb-6">
+                        <div
+                            class="inline-flex items-center gap-2 bg-red-100 text-red-800 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-3">
+                            <span class="w-2 h-2 rounded-full bg-red-600 blink-bg"></span>
+                            Status: Currently Missing
+                        </div>
+                        <h2 class="text-2xl md:text-3xl font-bold text-slate-900 leading-tight mb-2">
+                            IDENTIFICATION REQUIRED
+                        </h2>
+                        <div class="h-1 w-20 bg-red-600 mb-6"></div>
+
+                        <!-- The Prank Content -->
+                        <div class="bg-yellow-50 border border-yellow-200 rounded-md p-5 mb-6">
+                            <h3 class="text-sm font-bold text-slate-500 uppercase tracking-widest mb-1">Subject
+                                Description</h3>
+                            <p class="text-xl md:text-2xl font-serif text-slate-800 leading-relaxed font-semibold">
+                                "हा मुलगा हरवलेला आहे, संपडल्यास अजून दूर सोडून यावे."
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Details Grid -->
+                    <div class="grid grid-cols-2 gap-4 mb-8">
+                        <div>
+                            <p class="text-xs text-slate-500 uppercase font-semibold">शेवटी दिसलेला</p>
+                            <div class="flex items-center gap-1 text-slate-700 font-medium mt-1">
+                                <i class="fas fa-map-marker-alt text-red-500"></i>
+                                <span>सांगली</span>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-500 uppercase font-semibold">बक्षीस</p>
+                            <div class="flex items-center gap-1 text-slate-700 font-medium mt-1">
+                                <i class="fas fa-mug-hot text-amber-600"></i>
+                                <span>एक कप चहा</span>
+                            </div>
+                        </div>
+                        <div class="col-span-2">
+                            <p class="text-xs text-slate-500 uppercase font-semibold">चेतावणी</p>
+                            <p class="text-sm text-slate-600 mt-1">
+                                चहा आणि नाश्ता घेऊनच संपर्क साधा. भुकेलेला असताना तो अत्यंत भडखाऊ असतो.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Contact Card -->
+                    <div class="mt-auto">
+                        <div
+                            class="bg-slate-900 rounded-lg p-5 text-center shadow-lg transform hover:scale-[1.02] transition-transform duration-300">
+                            <p class="text-slate-400 text-xs uppercase tracking-widest mb-2">आढळल्यास,त्वरित संपर्क
+                                साधा.</p>
+                            <a href="tel:8530262376"
+                                class="inline-flex items-center gap-3 text-white text-2xl font-bold hover:text-red-400 transition-colors">
+                                <i class="fas fa-phone-square-alt"></i>
+                                <span>+91 8530262376</span>
+                            </a>
+                            <p class="text-slate-500 text-xs mt-2 italic">Lines operate 24/7 (mostly)</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Map Placeholder / Footer Info -->
+            <div class="bg-gray-50 border-t border-gray-200 p-4">
+                <div class="relative h-24 bg-gray-200 rounded border border-gray-300 overflow-hidden group cursor-help">
+                    <img src="https://placehold.co/1200x200/e2e8f0/94a3b8?text=SATELLITE+SEARCH+IN+PROGRESS..."
+                        alt="Fake Map" class="w-full h-full object-cover text-slate-400 opacity-60">
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div class="bg-white/90 backdrop-blur px-4 py-2 rounded-full shadow-sm">
+                            <span class="text-xs font-bold text-slate-600 uppercase tracking-widest"><i
+                                    class="fas fa-satellite-dish animate-pulse mr-2 text-blue-500"></i> Actively
+                                Tracking</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="bg-slate-900 text-slate-500 py-6 text-center text-xs">
+        <p class="uppercase tracking-widest mb-2">&copy; 2026 Public Security Department. All Rights Reserved.</p>
+        <p class="opacity-50">System ID: XJ-9821-ALPHA</p>
+    </footer>
+
+</body>
+
+</html>
